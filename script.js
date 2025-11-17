@@ -165,6 +165,37 @@ document.addEventListener('DOMContentLoaded', function () {
         el.style.transition = 'opacity 0.5s ease-in';
     });
 
+    (function () {
+        const root = document.documentElement;
+        const themeToggle = document.getElementById('themeToggle');
+        if (!themeToggle) return;
+
+        const prefersDark = window.matchMedia &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        // Descobre tema salvo ou cai no padrão do sistema
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+            root.classList.add('dark');
+        } else {
+            root.classList.remove('dark');
+        }
+
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                root.classList.add('dark');
+            } else {
+                root.classList.remove('dark');
+            }
+            localStorage.setItem('theme', theme);
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const isDark = root.classList.contains('dark');
+            setTheme(isDark ? 'light' : 'dark');
+        });
+    })();
+
     // Replace feather icons
     feather.replace();
 });

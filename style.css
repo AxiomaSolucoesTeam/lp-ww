@@ -26,12 +26,14 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #0A3A45; /* azul petróleo */
+    background: #0A3A45;
+    /* azul petróleo */
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #062833; /* azul mais escuro */
+    background: #062833;
+    /* azul mais escuro */
 }
 
 /* Glassmorphism refinado para tema bem escuro */
@@ -248,44 +250,51 @@ html {
     -webkit-backdrop-filter: blur(10px) saturate(120%);
 }
 
+/* Desktop: esconde só o hambúrguer, mantém o toggle de tema */
 @media (min-width: 900px) {
-    .nav-toggle {
+    #navToggle {
         display: none;
+    }
+
+    #themeToggle {
+        display: inline-flex;
     }
 }
 
 /* Glassmorphism tema claro/escuro */
 .glass {
-  background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(15, 23, 42, 0.06); /* azul escuro bem suave */
+    background: rgba(255, 255, 255, 0.82);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    /* azul escuro bem suave */
 }
 
 .glass-light {
-  background: rgba(248, 250, 252, 0.9); /* quase branco */
+    background: rgba(248, 250, 252, 0.9);
+    /* quase branco */
 }
 
 /* Quando estiver no modo escuro (html.dark ...) */
 .dark .glass {
-  background: rgba(10, 10, 10, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(10, 10, 10, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.04);
 }
 
 .dark .glass-light {
-  background: rgba(18, 18, 18, 0.7);
+    background: rgba(18, 18, 18, 0.7);
 }
 
 .glass-nav {
-  background: rgba(248, 250, 252, 0.92);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+    background: rgba(248, 250, 252, 0.92);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.06);
 }
 
 .dark .glass-nav {
-  background: rgba(8, 8, 8, 0.85);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(8, 8, 8, 0.85);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .theme-toggle {

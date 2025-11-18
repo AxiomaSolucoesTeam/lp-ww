@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang= "pt-BR">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
@@ -81,7 +81,7 @@
             </svg>
         </button>
 
-        
+
 
         <div class="nav-links">
             <a href="#hero" class="nav-link slide-up" style="transition-delay: 120ms">
@@ -130,7 +130,6 @@
     </div>
 
     <!-- Hero -->
-    <!-- Hero -->
     <section id="hero"
         class="relative min-h-[100svh] md:min-h-screen flex items-center glass radial-mask overflow-hidden offset-nav">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
@@ -163,17 +162,21 @@
                 </p>
 
                 <!-- CTAs -->
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 slide-up"
-                    style="transition-delay: 160ms">
+                <div class="flex flex-col sm:flex-row gap-4 slide-up" style="transition-delay: 160ms">
                     <!-- CTA principal: WhatsApp -->
                     <a href="https://wa.me/5551999999999?text=Quero%20agendar%20um%20Diagn%C3%B3stico%20Estrat%C3%A9gico"
-                        class="bg-primary-700 hover:bg-primary-800 text-white px-6 py-3 rounded-lg font-medium text-center transition shadow-glow-green">
+                        class="w-full sm:w-auto bg-primary-700 hover:bg-primary-800 text-white
+            px-6 py-3 rounded-lg font-medium transition shadow-glow-green
+            text-center sm:text-left">
                         Agendar Diagnóstico Estratégico
                     </a>
 
                     <!-- CTA secundário: rolar para diagnóstico -->
-                    <a href="#diagnostico"
-                        class="border border-accent-400 text-accent-700 dark:text-accent hover:bg-slate-100 dark:hover:bg-dark-800 px-6 py-3 rounded-lg font-medium text-center transition">
+                    <a href="#diagnostico" class="w-full sm:w-auto border border-accent-400
+            text-accent-700 dark:text-accent
+            hover:bg-slate-100 dark:hover:bg-dark-800
+            px-6 py-3 rounded-lg font-medium transition
+            text-center sm:text-left">
                         Entender como funciona
                     </a>
                 </div>
@@ -301,11 +304,13 @@
                         </div>
                     </div>
 
-                    <a href="#diagnostico"
-                        class="inline-block bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-glow-green slide-up"
-                        style="transition-delay: 220ms">
-                        Agendar um Diagnóstico com o Wanderson
-                    </a>
+                    <!-- CTA: central no mobile, à esquerda no desktop -->
+                    <div class="slide-up text-center md:text-left" style="transition-delay: 220ms">
+                        <a href="#diagnostico"
+                            class="inline-block bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-glow-green">
+                            Agendar um Diagnóstico com o Wanderson
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -362,8 +367,11 @@
                         </p>
                     </div>
 
-                    <div class="flex items-center text-accent-200 text-sm mt-2">
-                        <span class="mr-2">Ver como a ContabilMed pode te ajudar</span>
+                    <!-- CTA do card Médicos -->
+                    <div class="flex items-center justify-center md:justify-start text-accent-200 text-sm mt-2">
+                        <span class="mr-2 text-center md:text-left">
+                            Ver como a ContabilMed pode te ajudar
+                        </span>
                         <i data-feather="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition"></i>
                     </div>
                 </a>
@@ -393,8 +401,11 @@
                         </p>
                     </div>
 
-                    <div class="flex items-center text-accent-200 text-sm mt-2">
-                        <span class="mr-2">Ver como funciona a mentoria</span>
+                    <!-- CTA do card Empresários -->
+                    <div class="flex items-center justify-center md:justify-start text-accent-200 text-sm mt-2">
+                        <span class="mr-2 text-center md:text-left">
+                            Ver como funciona a mentoria
+                        </span>
                         <i data-feather="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition"></i>
                     </div>
                 </a>
@@ -618,15 +629,16 @@
                         É trabalhar no que realmente faz o negócio crescer — com número na mesa e direção clara.
                     </p>
 
-                    <div class="slide-up" style="transition-delay: 320ms">
+                    <div class="slide-up flex w-full md:w-auto justify-center md:justify-end"
+                        style="transition-delay: 320ms">
                         <a href="https://wa.me/5551999999999?text=Sou%20empres%C3%A1rio(a)%20e%20quero%20entender%20como%20funciona%20a%20mentoria"
                             class="inline-block bg-primary-600 hover:bg-primary-700 text-white px-6 py-3
-                   rounded-lg font-medium transition shadow-glow-green">
+                                  rounded-lg font-medium transition shadow-glow-green
+                                  text-center md:text-left">
                             Quero entender como funciona a mentoria
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -1073,7 +1085,7 @@
             <div class="grid md:grid-cols-4 gap-8 mb-8">
 
                 <!-- Coluna 1: Marca -->
-                <div class="slide-up" style="transition-delay: 0ms">
+                <div class="slide-up text-center md:text-left" style="transition-delay: 0ms">
                     <h3 class="text-xl font-bold mb-4 text-primary-900 dark:text-gray-100">
                         Wanderson Wigande
                     </h3>
@@ -1084,7 +1096,7 @@
                 </div>
 
                 <!-- Coluna 2: Navegação -->
-                <div class="slide-up" style="transition-delay: 80ms">
+                <div class="slide-up text-center md:text-left" style="transition-delay: 80ms">
                     <h4 class="font-semibold text-lg mb-4 text-primary-900 dark:text-gray-100">
                         Navegação
                     </h4>
@@ -1126,7 +1138,7 @@
                 </div>
 
                 <!-- Coluna 3: Soluções -->
-                <div class="slide-up" style="transition-delay: 160ms">
+                <div class="slide-up text-center md:text-left" style="transition-delay: 160ms">
                     <h4 class="font-semibold text-lg mb-4 text-primary-900 dark:text-gray-100">
                         Soluções
                     </h4>
@@ -1152,7 +1164,7 @@
                 </div>
 
                 <!-- Coluna 4: Contato / Redes -->
-                <div class="slide-up" style="transition-delay: 240ms">
+                <div class="slide-up text-center md:text-left" style="transition-delay: 240ms">
                     <h4 class="font-semibold text-lg mb-4 text-primary-900 dark:text-gray-100">
                         Contato
                     </h4>
@@ -1174,20 +1186,20 @@
                     <h5 class="font-semibold text-sm mb-2 text-primary-900 dark:text-gray-100">
                         Redes sociais
                     </h5>
-                    <div class="flex space-x-3">
+                    <div class="flex space-x-3 justify-center md:justify-start">
                         <a href="#" class="p-3 rounded-full transition flex items-center justify-center
-                    bg-slate-100/90 dark:bg-dark-800
-                    hover:bg-accent hover:text-dark-900" aria-label="Instagram">
+                       bg-slate-100/90 dark:bg-dark-800
+                       hover:bg-accent hover:text-dark-900" aria-label="Instagram">
                             <i data-feather="instagram" class="w-4 h-4"></i>
                         </a>
                         <a href="#" class="p-3 rounded-full transition flex items-center justify-center
-                    bg-slate-100/90 dark:bg-dark-800
-                    hover:bg-accent hover:text-dark-900" aria-label="LinkedIn">
+                       bg-slate-100/90 dark:bg-dark-800
+                       hover:bg-accent hover:text-dark-900" aria-label="LinkedIn">
                             <i data-feather="linkedin" class="w-4 h-4"></i>
                         </a>
                         <a href="https://wa.me/5551999999999" class="p-3 rounded-full transition flex items-center justify-center
-                    bg-slate-100/90 dark:bg-dark-800
-                    hover:bg-accent hover:text-dark-900" aria-label="WhatsApp">
+                       bg-slate-100/90 dark:bg-dark-800
+                       hover:bg-accent hover:text-dark-900" aria-label="WhatsApp">
                             <i data-feather="message-circle" class="w-4 h-4"></i>
                         </a>
                     </div>

@@ -1,12 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
-    /* === MENU MOBILE: animação abrir/fechar usando Web Animations API (sem mudar o CSS) === */
+    /* =========================================================
+     * MENU MOBILE (drawer central) – com fallback pra iOS antigo
+     * ========================================================= */
     (function () {
         const btn = document.getElementById('navToggle');
         const drawer = document.getElementById('navDrawer');
         if (!btn || !drawer) return;
 
-        // Respeita quem prefere menos movimento
-        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const prefersReducedMotion =
+            window.matchMedia &&
+            window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        // Verifica suporte à Web Animations API
+        const canUseWAAPI = typeof drawer.animate === 'function' && !prefersReducedMotion;
 
         const openFrames = [
             { opacity: 0, transform: 'translate(-50%, -8px) scale(.98)' },
@@ -17,13 +23,39 @@ document.addEventListener('DOMContentLoaded', function () {
             { opacity: 0, transform: 'translate(-50%, -8px) scale(.98)' }
         ];
 
-        const timingOpen = { duration: reduceMotion ? 0 : 220, easing: 'cubic-bezier(.22,.61,.36,1)', fill: 'forwards' };
-        const timingClose = { duration: reduceMotion ? 0 : 180, easing: 'cubic-bezier(.55,.06,.68,.19)', fill: 'forwards' };
+        const timingOpen = {
+            duration: prefersReducedMotion ? 0 : 220,
+            easing: 'cubic-bezier(.22,.61,.36,1)',
+            fill: 'forwards'
+        };
+        const timingClose = {
+            duration: prefersReducedMotion ? 0 : 180,
+            easing: 'cubic-bezier(.55,.06,.68,.19)',
+            fill: 'forwards'
+        };
 
         let isOpen = false;
         let currentAnim = null;
 
+        function showDrawerInstant() {
+            drawer.style.display = 'block';
+            drawer.style.opacity = '1';
+            drawer.style.transform = 'translate(-50%, 0) scale(1)';
+        }
+
+        function hideDrawerInstant() {
+            drawer.style.opacity = '0';
+            drawer.style.transform = 'translate(-50%, -8px) scale(.98)';
+            drawer.style.display = 'none';
+        }
+
         function openMenu() {
+            if (!canUseWAAPI) {
+                showDrawerInstant();
+                isOpen = true;
+                return;
+            }
+
             drawer.style.display = 'block'; // mostra antes de animar
             if (currentAnim) currentAnim.cancel();
             currentAnim = drawer.animate(openFrames, timingOpen);
@@ -31,6 +63,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         function closeMenu() {
+            if (!canUseWAAPI) {
+                hideDrawerInstant();
+                isOpen = false;
+                return;
+            }
+
             if (currentAnim) currentAnim.cancel();
             const anim = drawer.animate(closeFrames, timingClose);
             currentAnim = anim;
@@ -60,7 +98,9 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     })();
 
-    // Contact form submission (demo)
+    /* ============================================
+     * FORMULÁRIO DE CONTATO (demo + validação)
+     * ============================================ */
     const contactForm = document.getElementById('contact-form');
     const formSuccess = document.getElementById('form-success');
 
@@ -86,7 +126,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 contactForm.reset();
                 contactForm.classList.add('hidden');
                 formSuccess.classList.remove('hidden');
-                formSuccess.scrollIntoView({ behavior: 'smooth' });
+
+                // scrollIntoView pode não ter behavior smooth em alguns iOS,
+                // mas não quebra – ainda assim envolvemos em try/catch por segurança.
+                try {
+                    formSuccess.scrollIntoView({ behavior: 'smooth' });
+                } catch (err) {
+                    formSuccess.scrollIntoView();
+                }
 
                 // Reset after 5 seconds
                 setTimeout(() => {
@@ -97,29 +144,38 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // === Scroll Reveal com IntersectionObserver (substitui o bloco antigo) ===
+    /* =================================================
+     * Scroll Reveal com IntersectionObserver
+     * (com fallback para navegadores sem suporte / iOS)
+     * ================================================= */
     (function () {
         // Respeita quem prefere menos movimento
-        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const reduceMotion =
+            window.matchMedia &&
+            window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        // Elementos alvo: mantém compatibilidade com .slide-up e .fade-in
         const slideUps = document.querySelectorAll('.slide-up');
         const fadeIns = document.querySelectorAll('.fade-in');
 
-        // Estado inicial (igual ao que você já fazia)
+        // Estado inicial
         slideUps.forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(20px)';
-            el.style.transition = reduceMotion ? 'none' : 'opacity 0.5s ease-out, transform 0.5s ease-out';
+            el.style.transition = reduceMotion
+                ? 'none'
+                : 'opacity 0.5s ease-out, transform 0.5s ease-out';
         });
 
         fadeIns.forEach(el => {
             el.style.opacity = '0';
-            el.style.transition = reduceMotion ? 'none' : 'opacity 0.5s ease-in';
+            el.style.transition = reduceMotion
+                ? 'none'
+                : 'opacity 0.5s ease-in';
         });
 
-        // Se o usuário prefere sem animação, revela tudo e sai
-        if (reduceMotion) {
+        // Se o usuário prefere sem animação OU não há IntersectionObserver,
+        // apenas revela tudo e sai (evita erro em iOS antigo).
+        if (reduceMotion || typeof window.IntersectionObserver === 'undefined') {
             [...slideUps, ...fadeIns].forEach(el => {
                 el.style.opacity = '1';
                 el.style.transform = 'none';
@@ -127,14 +183,12 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        // Observer que revela uma única vez
         const io = new IntersectionObserver((entries, obs) => {
             entries.forEach(entry => {
                 if (!entry.isIntersecting) return;
 
                 const el = entry.target;
 
-                // Aplica o "reveal" conforme a classe
                 if (el.classList.contains('slide-up')) {
                     el.style.opacity = '1';
                     el.style.transform = 'translateY(0)';
@@ -149,28 +203,19 @@ document.addEventListener('DOMContentLoaded', function () {
             rootMargin: '0px 0px -10% 0px'
         });
 
-        // Observa todos
         [...slideUps, ...fadeIns].forEach(el => io.observe(el));
     })();
 
-    // Set initial state for animated elements
-    document.querySelectorAll('.slide-up').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
-    });
-
-    document.querySelectorAll('.fade-in').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transition = 'opacity 0.5s ease-in';
-    });
-
+    /* ===============================
+     * TOGGLE DE TEMA (light / dark)
+     * =============================== */
     (function () {
         const root = document.documentElement;
         const themeToggle = document.getElementById('themeToggle');
         if (!themeToggle) return;
 
-        const prefersDark = window.matchMedia &&
+        const prefersDark =
+            window.matchMedia &&
             window.matchMedia('(prefers-color-scheme: dark)').matches;
 
         // Descobre tema salvo ou cai no padrão do sistema
@@ -196,6 +241,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     })();
 
-    // Replace feather icons
-    feather.replace();
+    /* ======================
+     * FEATHER ICONS (safe)
+     * ====================== */
+    if (window.feather && typeof window.feather.replace === 'function') {
+        feather.replace();
+    }
 });

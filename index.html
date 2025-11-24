@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- Tailwind (CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -64,6 +63,7 @@
             }
         }
     </script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -81,23 +81,21 @@
             </svg>
         </button>
 
-
-
         <div class="nav-links">
             <a href="#hero" class="nav-link slide-up" style="transition-delay: 120ms">
                 <span>Início</span><span class="nav-indicator"></span>
             </a>
-            <a href="#medicos" class="nav-link slide-up" style="transition-delay: 160ms">
-                <span>Para Médicos</span><span class="nav-indicator"></span>
+            <a href="#papel-contabilmed" class="nav-link slide-up" style="transition-delay: 160ms">
+                <span>A ContabilMed</span><span class="nav-indicator"></span>
             </a>
-            <a href="#empresarios" class="nav-link slide-up" style="transition-delay: 200ms">
-                <span>Para Empresários</span><span class="nav-indicator"></span>
+            <a href="#about" class="nav-link slide-up" style="transition-delay: 200ms">
+                <span>O Mentor</span><span class="nav-indicator"></span>
             </a>
             <a href="#testimonials" class="nav-link slide-up" style="transition-delay: 240ms">
                 <span>Resultados</span><span class="nav-indicator"></span>
             </a>
             <a href="#diagnostico" class="nav-link slide-up" style="transition-delay: 280ms">
-                <span>Diagnóstico Estratégico</span><span class="nav-indicator"></span>
+                <span>Diagnóstico</span><span class="nav-indicator"></span>
             </a>
             <a href="https://wa.me/5551999999999?text=Quero%20agendar%20um%20Diagn%C3%B3stico%20Estrat%C3%A9gico"
                 class="nav-cta slide-up" style="transition-delay: 320ms">
@@ -119,8 +117,8 @@
     <!-- Mobile drawer centered under the pill -->
     <div id="navDrawer" class="nav-drawer">
         <a href="#hero">Início</a>
-        <a href="#medicos">Para Médicos</a>
-        <a href="#empresarios">Para Empresários</a>
+        <a href="#papel-contabilmed">A ContabilMed</a>
+        <a href="#about">O Mentor</a>
         <a href="#testimonials">Resultados</a>
         <a href="#diagnostico">Diagnóstico Estratégico</a>
         <a href="https://wa.me/5551999999999?text=Quero%20agendar%20um%20Diagn%C3%B3stico%20Estrat%C3%A9gico"
@@ -139,67 +137,35 @@
                 <!-- Microcredenciais -->
                 <p class="text-xs md:text-sm tracking-[0.25em] uppercase text-accent-700 dark:text-accent-300 mb-4 slide-up"
                     style="transition-delay: 40ms">
-                    21 anos de experiência • +1.400 consultórios e empresas atendidas • Estratégia financeira e
-                    crescimento
+                    Fundada por Wanderson Wigande: Empresário, Mentor e Especialista em Gestão.
                 </p>
 
                 <!-- Título principal -->
                 <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 slide-up
          text-primary-800 dark:text-gray-100">
-                    Cresça com
+                    Contabilidade Estratégica Para Médicos que Constroem
                     <span class="text-accent-600 dark:text-accent-300">Previsibilidade,</span>
-                    <span class="text-accent-600 dark:text-accent-300">Segurança Financeira</span>
-                    e
-                    <span class="text-accent-600 dark:text-accent-300">Lucro Real.</span>
+                    <span class="text-accent-600 dark:text-accent-300">Negócios de Sucesso.</span>
                 </h1>
 
                 <!-- Subtítulo -->
                 <p class="text-base md:text-lg text-slate-700 dark:text-gray-300 mb-8 max-w-xl slide-up"
                     style="transition-delay: 120ms">
-                    Mentoria estratégica + contabilidade especializada para médicos e empresários que levam negócio a
-                    sério.
-                    Mais controle, menos impostos, crescimento consistente.
+                    A ContabilMed é o núcleo que sustenta a visão empresarial de médicos e negócios que
+                    crescem com segurança, previsibilidade e lucro real.
                 </p>
 
                 <!-- CTAs -->
                 <div class="flex flex-col sm:flex-row gap-4 slide-up" style="transition-delay: 160ms">
                     <!-- CTA principal: WhatsApp -->
                     <a href="https://wa.me/5551999999999?text=Quero%20agendar%20um%20Diagn%C3%B3stico%20Estrat%C3%A9gico"
-                        class="w-full sm:w-auto bg-primary-700 hover:bg-primary-800 text-white
-            px-6 py-3 rounded-lg font-medium transition shadow-glow-green
-            text-center sm:text-left">
-                        Agendar Diagnóstico Estratégico
-                    </a>
-
-                    <!-- CTA secundário: rolar para diagnóstico -->
-                    <a href="#diagnostico" class="w-full sm:w-auto border border-accent-400
+                        class="w-full sm:w-auto border border-accent-400
             text-accent-700 dark:text-accent
             hover:bg-slate-100 dark:hover:bg-dark-800
             px-6 py-3 rounded-lg font-medium transition
             text-center sm:text-left">
-                        Entender como funciona
+                        Agendar Diagnóstico Estratégico
                     </a>
-                </div>
-
-                <!-- Números / reforço de autoridade -->
-                <div class="mt-10 flex flex-wrap gap-6">
-                    <div class="flex items-center slide-up" style="transition-delay: 220ms">
-                        <div class="bg-primary/10 dark:bg-primary/20 rounded-full p-2 mr-3">
-                            <i data-feather="briefcase" class="text-accent-700 dark:text-accent-300"></i>
-                        </div>
-                        <span class="text-slate-700 dark:text-gray-300">
-                            +21 anos em estratégia e contabilidade
-                        </span>
-                    </div>
-
-                    <div class="flex items-center slide-up" style="transition-delay: 260ms">
-                        <div class="bg-primary/10 dark:bg-primary/20 rounded-full p-2 mr-3">
-                            <i data-feather="activity" class="text-accent-700 dark:text-accent-300"></i>
-                        </div>
-                        <span class="text-slate-700 dark:text-gray-300">
-                            +1.400 consultórios e empresas atendidas
-                        </span>
-                    </div>
                 </div>
             </div>
 
@@ -211,7 +177,7 @@
                     <div
                         class="absolute -top-3 -left-3 w-full h-full rounded-2xl border-2 border-primary/30 opacity-30">
                     </div>
-                    <img src="assets/565601277_17952206742019441_446665364457829848_n.jpg"
+                    <img src="assets/2025-09-1609.18.49_820583a5.jpg"
                         alt="Wanderson Wigande em palestra sobre estratégia e crescimento"
                         class="relative rounded-2xl w-full max-w-md shadow-2xl object-cover" />
                 </div>
@@ -220,306 +186,107 @@
         </div>
     </section>
 
-    <!-- About  -->
-    <section id="about" class="py-20 glass-light">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center">
+    <!-- Introdução / Origem da ContabilMed -->
+    <section class="py-20 glass-light">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-primary-800 dark:text-gray-100 slide-up">
+                A ContabilMed é onde tudo começou.
+            </h2>
+            <div class="max-w-3xl mx-auto text-slate-700 dark:text-gray-300 space-y-4 slide-up">
+                <p>
+                    Há 21 anos, percebi que médicos estavam sendo tratados como "empresas comuns".
+                    Isso custava caro em impostos, desorganização financeira e falta de crescimento.
+                </p>
+                <p>
+                    A ContabilMed nasceu para resolver isso. Com o tempo, a mesma filosofia aplicada aos consultórios —
+                    gestão, clareza e estratégia — se tornou base para diversos outros negócios.
+                </p>
+            </div>
 
-                <!-- Foto -->
-                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
-                    <img src="assets/491894436_18288859249219071_4837655579974391416_n.jpg"
-                        alt="Wanderson Wigande em evento com empresários"
-                        class="w-200 h-200 object-cover border-2 border-primary/60 shadow-2xl rounded-xl fade-in"
-                        style="transition-delay: 60ms" />
-                </div>
-
-                <!-- Conteúdo -->
-                <div class="md:w-2/3 md:pl-12">
-                    <!-- Eyebrow -->
-                    <p class="text-xs md:text-sm tracking-[0.25em] uppercase text-accent-700 dark:text-accent-300 mb-3 slide-up"
-                        style="transition-delay: 20ms">
-                        Sobre Wanderson Wigande
-                    </p>
-
-                    <h2 class="text-3xl font-bold mb-6 slide-up text-primary-800 dark:text-gray-100"
-                        style="transition-delay: 40ms">
-                        Quem está por trás da estratégia.
-                    </h2>
-
-                    <p class="text-slate-700 dark:text-gray-300 mb-6 slide-up" style="transition-delay: 60ms">
-                        Contador, empresário e mentor, com mais de
-                        <span class="font-semibold">21 anos de experiência</span> ajudando médicos e donos de empresas
-                        a organizarem números, reduzirem impostos e crescerem com segurança financeira.
-                        À frente da ContabilMed e da mentoria estratégica, Wanderson une visão prática de gestão,
-                        contabilidade aplicada ao negócio e tomada de decisão baseada em dados.
-                    </p>
-
-                    <div class="mb-8">
-                        <!-- Bullet 1 -->
-                        <div class="flex items-start mb-4 slide-up" style="transition-delay: 100ms">
-                            <div class="bg-primary/15 rounded-full p-2 mr-4 mt-1">
-                                <i data-feather="check" class="text-accent-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg text-slate-900 dark:text-gray-100">
-                                    Estratégia financeira aplicada ao dia a dia
-                                </h3>
-                                <p class="text-slate-700 dark:text-gray-400">
-                                    Estruturação de fluxo de caixa, DRE e indicadores que mostram,
-                                    na prática, onde o negócio ganha e onde está perdendo dinheiro.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Bullet 2 -->
-                        <div class="flex items-start mb-4 slide-up" style="transition-delay: 140ms">
-                            <div class="bg-primary/15 rounded-full p-2 mr-4 mt-1">
-                                <i data-feather="check" class="text-accent-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg text-slate-900 dark:text-gray-100">
-                                    Experiência real com consultórios e empresas
-                                </h3>
-                                <p class="text-slate-700 dark:text-gray-400">
-                                    Mais de 1.400 consultórios e negócios atendidos, em diferentes segmentos,
-                                    sempre unindo contabilidade, estratégia e crescimento sustentável.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Bullet 3 -->
-                        <div class="flex items-start mb-4 slide-up" style="transition-delay: 180ms">
-                            <div class="bg-primary/15 rounded-full p-2 mr-4 mt-1">
-                                <i data-feather="check" class="text-accent-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-semibold text-lg text-slate-900 dark:text-gray-100">
-                                    Linguagem simples, foco em implementação
-                                </h3>
-                                <p class="text-slate-700 dark:text-gray-400">
-                                    Nada de termos complicados ou planos que ficam na gaveta.
-                                    O foco é clareza, decisões objetivas e ações que saem do papel.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CTA: central no mobile, à esquerda no desktop -->
-                    <div class="slide-up text-center md:text-left" style="transition-delay: 220ms">
-                        <a href="#diagnostico"
-                            class="inline-block bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-glow-green">
-                            Agendar um Diagnóstico com o Wanderson
-                        </a>
-                    </div>
-                </div>
-
+            <div
+                class="mt-10 flex flex-wrap justify-center items-center gap-4 text-sm md:text-base font-semibold text-accent-700 dark:text-accent-300 slide-up">
+                <span>ContabilMed</span>
+                <i data-feather="arrow-right" class="w-4 h-4"></i>
+                <span>Mentor Empresarial</span>
+                <i data-feather="arrow-right" class="w-4 h-4"></i>
+                <span>Pecuária / Patrimônio</span>
+                <i data-feather="arrow-right" class="w-4 h-4"></i>
+                <span>Expansão Estruturada</span>
             </div>
         </div>
     </section>
 
-    <!-- Segmentação: escolha de caminho -->
-    <section id="segmentacao" class="py-16 glass-light">
+    <!-- Segmentação: ContabilMed Técnico vs Estratégico -->
+    <section id="papel-contabilmed" class="py-16 glass">
         <div class="container mx-auto px-4">
 
-            <!-- Título -->
-            <div class="text-center mb-10 max-w-2xl mx-auto">
-                <p class="text-xs md:text-sm tracking-[0.25em] uppercase
-               text-accent-700 dark:text-accent-300 mb-3 slide-up" style="transition-delay: 40ms">
-                    Para quem é essa mentoria + contabilidade
-                </p>
-
-                <h2 class="text-2xl md:text-3xl font-bold mb-4 slide-up
-               text-primary-800 dark:text-gray-100" style="transition-delay: 80ms">
-                    Para qual cenário você deseja melhorar resultados?
+            <div class="text-center mb-10 max-w-3xl mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 slide-up text-primary-800 dark:text-gray-100">
+                    A Nível Técnico, Somos Contabilidade.<br class="hidden md:block" />
+                    <span class="text-accent-600 dark:text-accent-400">A Nível Estratégico, Somos Construção de
+                        Negócios.</span>
                 </h2>
-
-                <p class="text-slate-700 dark:text-gray-300 slide-up" style="transition-delay: 120ms">
-                    Escolha o caminho que mais se aproxima da sua realidade
-                    e veja como podemos atuar no seu negócio.
+                <p class="text-lg text-slate-700 dark:text-gray-300 slide-up">
+                    A contabilidade aqui não é operacional — é direção, estrutura e previsibilidade.
                 </p>
             </div>
 
-            <!-- Cards de segmentação -->
-            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div class="max-w-4xl mx-auto bg-slate-800 text-white dark:bg-dark-800/90
+               border border-slate-700 dark:border-white/10 rounded-2xl p-8 md:p-10 shadow-2xl slide-up">
 
-                <!-- Card Médicos -->
-                <a href="#medicos" class="group bg-slate-800 text-white dark:bg-dark-800/80
-               border border-slate-900/40 dark:border-white/5
-               hover:border-accent/60 rounded-2xl p-6 md:p-7
-               flex flex-col gap-4 transition transform
-               hover:-translate-y-1 hover:shadow-xl slide-up" style="transition-delay: 160ms">
-                    <div class="flex items-center gap-3">
-                        <div class="bg-primary/20 rounded-full p-3">
-                            <i data-feather="stethoscope" class="text-accent-300"></i>
+                <div class="mb-8 text-center md:text-left">
+                    <h3 class="text-xl font-semibold text-white mb-2">O que entregamos para o seu negócio:</h3>
+                    <div class="h-1 w-20 bg-accent-500 rounded mx-auto md:mx-0"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="flex gap-4">
+                        <div class="bg-primary/20 p-2 rounded-lg h-fit">
+                            <i data-feather="shield" class="text-accent-400 w-6 h-6"></i>
                         </div>
-                        <span class="text-sm font-medium tracking-[0.18em] uppercase text-accent-200">
-                            Sou médico
-                        </span>
-                    </div>
-
-                    <div>
-                        <h3 class="text-xl font-semibold text-white mb-2">
-                            Quero pagar menos impostos e aumentar o lucro do meu consultório.
-                        </h3>
-                        <p class="text-slate-100/80">
-                            Estratégia contábil específica para área da saúde, com foco em redução tributária legal,
-                            organização financeira e crescimento sustentado do consultório.
-                        </p>
-                    </div>
-
-                    <!-- CTA do card Médicos -->
-                    <div class="flex items-center justify-center md:justify-start text-accent-200 text-sm mt-2">
-                        <span class="mr-2 text-center md:text-left">
-                            Ver como a ContabilMed pode te ajudar
-                        </span>
-                        <i data-feather="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition"></i>
-                    </div>
-                </a>
-
-                <!-- Card Empresários -->
-                <a href="#empresarios" class="group bg-slate-800 text-white dark:bg-dark-800/80
-               border border-slate-900/40 dark:border-white/5
-               hover:border-accent/60 rounded-2xl p-6 md:p-7
-               flex flex-col gap-4 transition transform
-               hover:-translate-y-1 hover:shadow-xl slide-up" style="transition-delay: 200ms">
-                    <div class="flex items-center gap-3">
-                        <div class="bg-primary/20 rounded-full p-3">
-                            <i data-feather="bar-chart-2" class="text-accent-300"></i>
+                        <div>
+                            <h4 class="font-bold text-gray-100">Segurança Fiscal</h4>
+                            <p class="text-sm text-gray-400">Redução inteligente de impostos (legal) e blindagem
+                                patrimonial.</p>
                         </div>
-                        <span class="text-sm font-medium tracking-[0.18em] uppercase text-accent-200">
-                            Sou empresário
-                        </span>
                     </div>
 
-                    <div>
-                        <h3 class="text-xl font-semibold text-white mb-2">
-                            Quero escalar minha empresa com estratégia, números e previsibilidade.
-                        </h3>
-                        <p class="text-slate-100/80">
-                            Mentoria estratégica para estruturar métricas, fluxo de caixa, oferta e máquina de vendas,
-                            garantindo crescimento com controle e segurança financeira.
-                        </p>
+                    <div class="flex gap-4">
+                        <div class="bg-primary/20 p-2 rounded-lg h-fit">
+                            <i data-feather="trending-up" class="text-accent-400 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-100">Crescimento e Escala</h4>
+                            <p class="text-sm text-gray-400">Estrutura preparada para expansão sustentável.</p>
+                        </div>
                     </div>
 
-                    <!-- CTA do card Empresários -->
-                    <div class="flex items-center justify-center md:justify-start text-accent-200 text-sm mt-2">
-                        <span class="mr-2 text-center md:text-left">
-                            Ver como funciona a mentoria
-                        </span>
-                        <i data-feather="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition"></i>
+                    <div class="flex gap-4">
+                        <div class="bg-primary/20 p-2 rounded-lg h-fit">
+                            <i data-feather="pie-chart" class="text-accent-400 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-100">Lucro Real</h4>
+                            <p class="text-sm text-gray-400">Controle de margem e indicadores de verdade.</p>
+                        </div>
                     </div>
-                </a>
 
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Caminho Médicos / ContabilMed -->
-    <section id="medicos" class="py-20 glass">
-        <div class="container mx-auto px-4">
-
-            <!-- Cabeçalho -->
-            <div class="text-center mb-12 max-w-3xl mx-auto">
-                <p class="text-xs md:text-sm tracking-[0.25em] uppercase
-               text-accent-700 dark:text-accent-300 mb-3 slide-up" style="transition-delay: 40ms">
-                    Para médicos e profissionais da saúde
-                </p>
-
-                <h2 class="text-3xl md:text-4xl font-bold mb-4
-               text-primary-800 dark:text-gray-100 slide-up" style="transition-delay: 80ms">
-                    Seu consultório é um negócio.<br class="hidden md:block" />
-                    Ele precisa de estratégia.
-                </h2>
-
-                <p class="text-lg text-slate-700 dark:text-gray-300 slide-up" style="transition-delay: 120ms">
-                    A maioria dos médicos paga mais impostos do que deveria e opera sem previsibilidade financeira.
-                    Contabilidade comum não serve para a área médica — cada decisão impacta diretamente no seu lucro,
-                    no seu tempo e na sua tranquilidade.
-                </p>
-            </div>
-
-            <!-- Benefícios / entregas ContabilMed -->
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
-                <!-- Redução tributária -->
-                <div class="bg-dark-800/80 p-6 rounded-xl hover:shadow-xl hover:shadow-black/40
-               border border-white/5 hover:border-accent/60 transition slide-up" style="transition-delay: 0ms">
-                    <div class="bg-primary/20 rounded-full p-3 inline-block mb-4">
-                        <i data-feather="shield" class="text-accent-400"></i>
+                    <div class="flex gap-4">
+                        <div class="bg-primary/20 p-2 rounded-lg h-fit">
+                            <i data-feather="check-circle" class="text-accent-400 w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-100">Previsibilidade</h4>
+                            <p class="text-sm text-gray-400">Segurança financeira para tomadas de decisão.</p>
+                        </div>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-50">
-                        Redução tributária legal
-                    </h3>
-                    <p class="text-gray-200">
-                        Estruturação tributária pensada para médicos, com enquadramento correto e
-                        planejamento para pagar apenas o que é devido — sem sustos e sem riscos desnecessários.
-                    </p>
                 </div>
 
-                <!-- Margem & lucro real -->
-                <div class="bg-dark-800/80 p-6 rounded-xl hover:shadow-xl hover:shadow-black/40
-               border border-white/5 hover:border-accent/60 transition slide-up" style="transition-delay: 80ms">
-                    <div class="bg-primary/20 rounded-full p-3 inline-block mb-4">
-                        <i data-feather="bar-chart-2" class="text-accent-400"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-50">
-                        Controle de margem e lucro real
-                    </h3>
-                    <p class="text-gray-200">
-                        Visão clara de faturamento, custos e retorno por tipo de procedimento, convênio e canal —
-                        para você enxergar onde realmente ganha e onde está perdendo dinheiro.
-                    </p>
-                </div>
-
-                <!-- Estrutura financeira organizada -->
-                <div class="bg-dark-800/80 p-6 rounded-xl hover:shadow-xl hover:shadow-black/40
-               border border-white/5 hover:border-accent/60 transition slide-up" style="transition-delay: 160ms">
-                    <div class="bg-primary/20 rounded-full p-3 inline-block mb-4">
-                        <i data-feather="file-text" class="text-accent-400"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-50">
-                        Estrutura financeira organizada
-                    </h3>
-                    <p class="text-gray-200">
-                        Fluxo de caixa, DRE simplificada e indicadores práticos para você acompanhar o consultório
-                        como um negócio — mesmo sem ser “da área financeira”.
-                    </p>
-                </div>
-
-                <!-- Crescimento planejado -->
-                <div class="bg-dark-800/80 p-6 rounded-xl hover:shadow-xl hover:shadow-black/40
-               border border-white/5 hover:border-accent/60 transition slide-up" style="transition-delay: 240ms">
-                    <div class="bg-primary/20 rounded-full p-3 inline-block mb-4">
-                        <i data-feather="trending-up" class="text-accent-400"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-50">
-                        Crescimento planejado com segurança
-                    </h3>
-                    <p class="text-gray-200">
-                        Decisões de crescimento (contratar equipe, abrir nova unidade, investir em marketing)
-                        apoiadas em números — não em achismo.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Mini-prova + CTA -->
-            <div class="flex flex-col md:flex-row items-center justify-between gap-6 mt-4">
-                <div class="flex items-center slide-up" style="transition-delay: 280ms">
-                    <div class="bg-primary/20 rounded-full p-3 mr-3">
-                        <i data-feather="clock" class="text-accent-400"></i>
-                    </div>
-                    <p class="text-slate-700 dark:text-gray-300 text-sm md:text-base">
-                        <span class="font-semibold text-accent-700 dark:text-accent-200">+21 anos</span>
-                        atuando com consultórios e negócios na saúde,
-                        unindo contabilidade e estratégia para médicos que querem crescer com segurança.
-                    </p>
-                </div>
-
-                <div class="slide-up" style="transition-delay: 320ms">
-                    <a href="https://wa.me/5551999999999?text=Sou%20m%C3%A9dico(a)%20e%20quero%20aumentar%20o%20lucro%20do%20meu%20consult%C3%B3rio"
-                        class="inline-block bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg
-                 font-medium transition shadow-glow-green">
-                        Quero aumentar o lucro do meu consultório
+                <div class="text-center border-t border-white/10 pt-8">
+                    <a href="https://wa.me/5551999999999?text=Quero%20organizar%20e%20expandir%20meu%20consult%C3%B3rio"
+                        class="inline-flex items-center bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 rounded-lg font-bold transition transform hover:-translate-y-1 shadow-glow-green">
+                        Quero organizar e expandir meu consultório
+                        <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
                     </a>
                 </div>
             </div>
@@ -527,123 +294,210 @@
         </div>
     </section>
 
-    <!-- Caminho Empresários / Mentoria Estratégica -->
-    <section id="empresarios" class="py-20 glass-light">
+    <!-- Sobre o Mentor / Wanderson Wigande -->
+    <section id="about" class="py-20 glass-light">
         <div class="container mx-auto px-4">
-            <div class="max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
 
-                <!-- Cabeçalho -->
-                <div class="text-center mb-12">
-                    <p class="text-xs md:text-sm tracking-[0.25em] uppercase
-                 text-accent-700 dark:text-accent-300 mb-3 slide-up" style="transition-delay: 40ms">
-                        Para donos de empresas, gestores e empreendedores
+                <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                    <img src="assets/2025-09-1609.18.49_4626daea.jpg" alt="Wanderson Wigande em evento com empresários"
+                        class="w-full max-w-sm h-auto object-cover border-2 border-primary/60 shadow-2xl rounded-xl fade-in"
+                        style="transition-delay: 60ms" />
+                </div>
+
+                <div class="md:w-2/3 md:pl-12">
+                    <p class="text-xs md:text-sm tracking-[0.25em] uppercase text-accent-700 dark:text-accent-300 mb-3 slide-up"
+                        style="transition-delay: 20ms">
+                        O Arquiteto por trás da estrutura
                     </p>
 
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4
-                 text-primary-800 dark:text-gray-100 slide-up" style="transition-delay: 80ms">
-                        Quer crescer? Então vamos colocar número na mesa.
+                    <h2 class="text-3xl font-bold mb-6 slide-up text-primary-800 dark:text-gray-100"
+                        style="transition-delay: 40ms">
+                        Quem está por trás da ContabilMed?
                     </h2>
 
-                    <div class="space-y-1 text-slate-700 dark:text-gray-300 slide-up" style="transition-delay: 120ms">
-                        <p>Negócios não crescem sem previsibilidade.</p>
-                        <p>Lucro não acontece sem controle.</p>
-                        <p>E escala não existe sem estratégia.</p>
-                        <p class="mt-3 text-accent-700 dark:text-accent-200">
-                            Aqui não tem motivação. Tem direção baseada em dados.
+                    <p class="text-slate-700 dark:text-gray-300 mb-8 slide-up" style="transition-delay: 60ms">
+                        Wanderson Wigande é empresário e mentor com atuação em três frentes complementares, unindo a
+                        técnica contábil à visão de dono:
+                    </p>
+
+                    <div class="space-y-4 mb-10 slide-up" style="transition-delay: 80ms">
+
+                        <div
+                            class="group flex items-start p-4 rounded-xl dark:bg-dark-800/60 border border-slate-200 dark:border-white/5 hover:border-accent/50 transition">
+                            <div
+                                class="bg-primary/10 dark:bg-primary/20 p-3 rounded-lg mr-4 shrink-0 group-hover:bg-primary/20 transition">
+                                <i data-feather="briefcase" class="text-primary-700 dark:text-primary-400 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="flex flex-wrap items-baseline gap-2 mb-1">
+                                    <h3 class="font-bold text-lg text-primary-900 dark:text-gray-100">ContabilMed</h3>
+                                    <span
+                                        class="text-xs font-semibold uppercase tracking-wider text-accent-600 dark:text-accent-400 bg-accent/10 px-2 py-0.5 rounded">
+                                        Fundador
+                                    </span>
+                                </div>
+                                <p class="text-sm md:text-base text-slate-600 dark:text-gray-400">
+                                    <strong class="text-slate-800 dark:text-gray-200">O que representa:</strong>
+                                    Base técnica e estratégica.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group flex items-start p-4 rounded-xl dark:bg-dark-800/60 border border-slate-200 dark:border-white/5 hover:border-accent/50 transition">
+                            <div
+                                class="bg-primary/10 dark:bg-primary/20 p-3 rounded-lg mr-4 shrink-0 group-hover:bg-primary/20 transition">
+                                <i data-feather="trending-up"
+                                    class="text-primary-700 dark:text-primary-400 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="flex flex-wrap items-baseline gap-2 mb-1">
+                                    <h3 class="font-bold text-lg text-primary-900 dark:text-gray-100">Mentoria
+                                        Empresarial</h3>
+                                    <span
+                                        class="text-xs font-semibold uppercase tracking-wider text-accent-600 dark:text-accent-400 bg-accent/10 px-2 py-0.5 rounded">
+                                        Mentor e Estrategista
+                                    </span>
+                                </div>
+                                <p class="text-sm md:text-base text-slate-600 dark:text-gray-400">
+                                    <strong class="text-slate-800 dark:text-gray-200">O que representa:</strong>
+                                    Crescimento e escala para negócios.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="group flex items-start p-4 rounded-xl dark:bg-dark-800/60 border border-slate-200 dark:border-white/5 hover:border-accent/50 transition">
+                            <div
+                                class="bg-primary/10 dark:bg-primary/20 p-3 rounded-lg mr-4 shrink-0 group-hover:bg-primary/20 transition">
+                                <i data-feather="sun" class="text-primary-700 dark:text-primary-400 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <div class="flex flex-wrap items-baseline gap-2 mb-1">
+                                    <h3 class="font-bold text-lg text-primary-900 dark:text-gray-100">WWPP / Pecuária
+                                    </h3>
+                                    <span
+                                        class="text-xs font-semibold uppercase tracking-wider text-accent-600 dark:text-accent-400 bg-accent/10 px-2 py-0.5 rounded">
+                                        Investidor e Gestor
+                                    </span>
+                                </div>
+                                <p class="text-sm md:text-base text-slate-600 dark:text-gray-400">
+                                    <strong class="text-slate-800 dark:text-gray-200">O que representa:</strong>
+                                    Patrimônio, expansão e visão de longo prazo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-up relative pl-6 border-l-4 border-accent-500 py-2"
+                        style="transition-delay: 120ms">
+                        <p
+                            class="text-xl md:text-2xl font-serif italic text-primary-800 dark:text-gray-200 leading-relaxed">
+                            “Crescer não é ter mais trabalho.<br>
+                            É ter mais <span class="text-accent-600 dark:text-accent-400 font-semibold">direção</span>.”
                         </p>
                     </div>
                 </div>
 
-                <!-- 4 Pilares da Mentoria -->
-                <div class="grid md:grid-cols-2 gap-8 mb-12">
-
-                    <!-- Pilar 1: Previsibilidade Financeira -->
-                    <div class="bg-dark-800/80 p-6 rounded-xl border border-white/5 hover:border-accent/60
-                 hover:shadow-xl hover:shadow-black/40 transition slide-up" style="transition-delay: 0ms">
-                        <div class="bg-primary/20 rounded-full p-3 inline-block mb-4">
-                            <i data-feather="activity" class="text-accent-400"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3 text-gray-50">Previsibilidade financeira</h3>
-                        <ul class="text-gray-200 space-y-1 text-sm md:text-base">
-                            <li>• Fluxo de caixa estruturado</li>
-                            <li>• DRE simples, que você realmente entende</li>
-                            <li>• Indicadores de margem e resultado real</li>
-                        </ul>
-                    </div>
-
-                    <!-- Pilar 2: Crescimento e Aquisição -->
-                    <div class="bg-dark-800/80 p-6 rounded-xl border border-white/5 hover:border-accent/60
-                 hover:shadow-xl hover:shadow-black/40 transition slide-up" style="transition-delay: 80ms">
-                        <div class="bg-primary/20 rounded-full p-3 inline-block mb-4">
-                            <i data-feather="trending-up" class="text-accent-400"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3 text-gray-50">Crescimento e aquisição</h3>
-                        <ul class="text-gray-200 space-y-1 text-sm md:text-base">
-                            <li>• Estratégia comercial clara</li>
-                            <li>• Oferta estruturada e escalável</li>
-                            <li>• Máquinas de venda previsíveis</li>
-                        </ul>
-                    </div>
-
-                    <!-- Pilar 3: Redução de Impostos e Blindagem -->
-                    <div class="bg-dark-800/80 p-6 rounded-xl border border-white/5 hover:border-accent/60
-                 hover:shadow-xl hover:shadow-black/40 transition slide-up" style="transition-delay: 160ms">
-                        <div class="bg-primary/20 rounded-full p-3 inline-block mb-4">
-                            <i data-feather="shield" class="text-accent-400"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3 text-gray-50">
-                            Redução de impostos e blindagem
-                        </h3>
-                        <ul class="text-gray-200 space-y-1 text-sm md:text-base">
-                            <li>• Estrutura societária inteligente</li>
-                            <li>• Planejamento tributário estratégico</li>
-                            <li>• Menos risco, mais segurança jurídica</li>
-                        </ul>
-                    </div>
-
-                    <!-- Pilar 4: Gestão, Equipe e Execução -->
-                    <div class="bg-dark-800/80 p-6 rounded-xl border border-white/5 hover:border-accent/60
-                 hover:shadow-xl hover:shadow-black/40 transition slide-up" style="transition-delay: 240ms">
-                        <div class="bg-primary/20 rounded-full p-3 inline-block mb-4">
-                            <i data-feather="users" class="text-accent-400"></i>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-3 text-gray-50">
-                            Gestão, equipe e execução
-                        </h3>
-                        <ul class="text-gray-200 space-y-1 text-sm md:text-base">
-                            <li>• Time alinhado com a estratégia</li>
-                            <li>• Processos claros e replicáveis</li>
-                            <li>• Metas que fazem sentido (e são acompanhadas)</li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <!-- Fechamento + CTA -->
-                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-                    <p class="text-slate-700 dark:text-gray-300 text-sm md:text-base slide-up"
-                        style="transition-delay: 280ms">
-                        <span class="font-semibold text-accent-700 dark:text-accent-200">
-                            Crescimento não é trabalhar mais.
-                        </span><br class="hidden md:block" />
-                        É trabalhar no que realmente faz o negócio crescer — com número na mesa e direção clara.
-                    </p>
-
-                    <div class="slide-up flex w-full md:w-auto justify-center md:justify-end"
-                        style="transition-delay: 320ms">
-                        <a href="https://wa.me/5551999999999?text=Sou%20empres%C3%A1rio(a)%20e%20quero%20entender%20como%20funciona%20a%20mentoria"
-                            class="inline-block bg-primary-600 hover:bg-primary-700 text-white px-6 py-3
-                                  rounded-lg font-medium transition shadow-glow-green
-                                  text-center md:text-left">
-                            Quero entender como funciona a mentoria
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Resultados / Prova Social -->
+    <!-- Benefícios / Resultados Esperados -->
+    <section id="patrimonio" class="py-20 glass relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-accent-500/10 rounded-full blur-3xl -z-10"></div>
+
+        <div class="container mx-auto px-4">
+
+            <div class="text-center mb-12 max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary-800 dark:text-gray-100 slide-up">
+                    Porque Seu Consultório Também É Um Patrimônio.
+                </h2>
+                <p class="text-lg text-slate-700 dark:text-gray-300 slide-up">
+                    Médicos que crescem de verdade não apenas atendem pacientes. Eles constroem:
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+
+                <div class="dark:bg-dark-800 border border-slate-200 dark:border-white/5 p-6 rounded-xl text-center hover:border-accent/50 hover:-translate-y-1 transition duration-300 shadow-lg slide-up"
+                    style="transition-delay: 0ms">
+                    <div
+                        class="bg-primary-50 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-primary-600 dark:text-primary-400">
+                        <i data-feather="trending-up" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 dark:text-gray-100">Consultórios Lucrativos</h3>
+                </div>
+
+                <div class="dark:bg-dark-800 border border-slate-200 dark:border-white/5 p-6 rounded-xl text-center hover:border-accent/50 hover:-translate-y-1 transition duration-300 shadow-lg slide-up"
+                    style="transition-delay: 100ms">
+                    <div
+                        class="bg-primary-50 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-primary-600 dark:text-primary-400">
+                        <i data-feather="refresh-cw" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 dark:text-gray-100">Empresas que se pagam</h3>
+                </div>
+
+                <div class="dark:bg-dark-800 border border-slate-200 dark:border-white/5 p-6 rounded-xl text-center hover:border-accent/50 hover:-translate-y-1 transition duration-300 shadow-lg slide-up"
+                    style="transition-delay: 200ms">
+                    <div
+                        class="bg-primary-50 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-primary-600 dark:text-primary-400">
+                        <i data-feather="layers" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 dark:text-gray-100">Patrimônio Inteligente</h3>
+                </div>
+
+                <div class="dark:bg-dark-800 border border-slate-200 dark:border-white/5 p-6 rounded-xl text-center hover:border-accent/50 hover:-translate-y-1 transition duration-300 shadow-lg slide-up"
+                    style="transition-delay: 300ms">
+                    <div
+                        class="bg-primary-50 dark:bg-primary-900/30 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-primary-600 dark:text-primary-400">
+                        <i data-feather="shield" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800 dark:text-gray-100">Segurança Familiar</h3>
+                </div>
+
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-primary-900 text-white rounded-2xl p-8 md:p-12 relative overflow-hidden shadow-2xl slide-up"
+                style="transition-delay: 400ms">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <i data-feather="compass" class="w-32 h-32"></i>
+                </div>
+
+                <div class="relative z-10 text-center md:text-left">
+                    <h3 class="text-2xl font-bold mb-6 text-accent-400">
+                        Isso não acontece sem estratégia.
+                    </h3>
+
+                    <div class="grid md:grid-cols-3 gap-6 mb-8 border-t border-white/10 pt-6">
+                        <div>
+                            <span class="block text-accent-300 font-bold text-lg mb-1">A ContabilMed</span>
+                            <p class="text-slate-300 text-sm">Entrega a base sólida e a organização necessária.</p>
+                        </div>
+                        <div>
+                            <span class="block text-accent-300 font-bold text-lg mb-1">A Mentoria</span>
+                            <p class="text-slate-300 text-sm">Acelera o caminho com visão empresarial.</p>
+                        </div>
+                        <div>
+                            <span class="block text-accent-300 font-bold text-lg mb-1">A Pecuária</span>
+                            <p class="text-slate-300 text-sm">Representa consolidação e patrimônio real.</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center md:text-right">
+                        <a href="https://wa.me/5551999999999?text=Quero%20estruturar%20meu%20consult%C3%B3rio%20como%20neg%C3%B3cio"
+                            class="inline-block text-primary-900 hover:bg-slate-700 px-8 py-3 rounded-lg font-bold transition shadow-lg transform hover:-translate-y-1">
+                            Quero estruturar meu consultório como negócio
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Depoimentos / Resultados -->
     <section id="testimonials" class="py-20 glass">
         <div class="container mx-auto px-4">
 
@@ -753,7 +607,7 @@
         </div>
     </section>
 
-    <!-- Diagnóstico Estratégico -->
+    <!-- Diagnóstico Estratégico Gratuito-->
     <section id="diagnostico" class="py-20 glass-light">
         <div class="container mx-auto px-4">
             <div class="max-w-5xl mx-auto">
@@ -762,17 +616,17 @@
                 <div class="text-center mb-12 max-w-3xl mx-auto">
                     <p class="text-xs md:text-sm tracking-[0.25em] uppercase
                  text-accent-700 dark:text-accent-300 mb-3 slide-up" style="transition-delay: 40ms">
-                        Primeiro passo
+                        Diagnóstico Estratégico Gratuito
                     </p>
 
                     <h2 class="text-3xl md:text-4xl font-bold mb-4
                  text-primary-800 dark:text-gray-100 slide-up" style="transition-delay: 80ms">
-                        Antes de qualquer proposta, entendemos seu cenário.
+                        Vamos avaliar seu consultório como negócio.
                     </h2>
 
                     <p class="text-lg text-slate-700 dark:text-gray-300 slide-up" style="transition-delay: 120ms">
-                        O diagnóstico estratégico é uma conversa guiada, em que analisamos seus números,
-                        entendemos sua realidade e apontamos oportunidades reais de lucro, economia e crescimento.
+                        Analisamos impostos, lucro, riscos fiscais e oportunidades de escala para você crescer com
+                        segurança.
                     </p>
                 </div>
 
@@ -832,19 +686,23 @@
                                 Como funciona na prática:
                             </h3>
 
-                            <ul class="space-y-2 text-gray-200 text-sm md:text-base mb-6">
-                                <li>• Encontro online de até 60 minutos.</li>
-                                <li>• Você traz seus dados atuais (mesmo que ainda estejam “bagunçados”).</li>
-                                <li>• Avaliamos juntos riscos, oportunidades e prioridades.</li>
-                            </ul>
-
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-center gap-3">
+                                    <i data-feather="check-circle" class="text-accent-400 w-5 h-5"></i>
+                                    <span class="text-gray-200">Sem custo.</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-feather="check-circle" class="text-accent-400 w-5 h-5"></i>
+                                    <span class="text-gray-200">Sem obrigação.</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i data-feather="check-circle" class="text-accent-400 w-5 h-5"></i>
+                                    <span class="text-gray-200">Totalmente online (até 60 min).</span>
+                                </div>
+                            </div>
                             <div class="space-y-1 text-gray-200 text-sm md:text-base mb-6">
-                                <p>Sem custo.</p>
-                                <p>Sem pressão.</p>
-                                <p>Sem compromisso.</p>
-                                <p class="mt-2">
-                                    Se fizer sentido, seguimos com proposta estruturada.<br />
-                                    Se não fizer, você sai com muito mais clareza do que precisa fazer.
+                                <p>Se fizer sentido, seguimos juntos. <br>
+                                    Se não, você sai com clareza.
                                 </p>
                             </div>
 
@@ -869,7 +727,6 @@
         </div>
     </section>
 
-
     <!-- Contato -->
     <section id="contact" class="py-20 glass-light">
         <div class="container mx-auto px-4">
@@ -888,9 +745,8 @@
                     </h2>
 
                     <p class="text-xl text-slate-700 dark:text-gray-400 slide-up" style="transition-delay: 120ms">
-                        Preencha o formulário ou fale direto pelo WhatsApp para agendar seu Diagnóstico Estratégico
-                        e entender como podemos te ajudar a crescer com previsibilidade, segurança financeira e lucro
-                        real.
+                        Se preferir não usar o WhatsApp agora, preencha seus dados abaixo. Nossa equipe entrará em
+                        contato em até 24h para agendar seu Diagnóstico Estratégico sem custo.
                     </p>
                 </div>
 
@@ -1090,8 +946,8 @@
                         Wanderson Wigande
                     </h3>
                     <p class="text-slate-700 dark:text-gray-400 text-sm">
-                        Mentoria estratégica e contabilidade especializada para médicos e empresários
-                        que querem crescer com previsibilidade, segurança financeira e lucro real.
+                        A ContabilMed é o núcleo que sustenta a visão empresarial de médicos e negócios que crescem com
+                        segurança, previsibilidade e lucro real.
                     </p>
                 </div>
 
@@ -1140,24 +996,30 @@
                 <!-- Coluna 3: Soluções -->
                 <div class="slide-up text-center md:text-left" style="transition-delay: 160ms">
                     <h4 class="font-semibold text-lg mb-4 text-primary-900 dark:text-gray-100">
-                        Soluções
+                        Ecossistema
                     </h4>
                     <ul class="space-y-2 text-sm">
                         <li>
-                            <a href="#medicos" class="text-slate-600 dark:text-gray-400 hover:text-accent transition">
-                                ContabilMed para médicos
+                            <a href="#medicos"
+                                class="group flex items-center justify-center md:justify-start text-slate-600 dark:text-gray-400 hover:text-accent transition">
+                                <i data-feather="briefcase"
+                                    class="w-3 h-3 mr-2 text-primary-500 group-hover:text-accent"></i>
+                                ContabilMed (Técnico)
                             </a>
                         </li>
                         <li>
-                            <a href="#empresarios"
-                                class="text-slate-600 dark:text-gray-400 hover:text-accent transition">
-                                Mentoria para empresários
+                            <a href="#about"
+                                class="group flex items-center justify-center md:justify-start text-slate-600 dark:text-gray-400 hover:text-accent transition">
+                                <i data-feather="trending-up"
+                                    class="w-3 h-3 mr-2 text-primary-500 group-hover:text-accent"></i>
+                                Mentoria (Estratégico)
                             </a>
                         </li>
                         <li>
-                            <a href="#diagnostico"
-                                class="text-slate-600 dark:text-gray-400 hover:text-accent transition">
-                                Diagnóstico Estratégico
+                            <a href="#about"
+                                class="group flex items-center justify-center md:justify-start text-slate-600 dark:text-gray-400 hover:text-accent transition">
+                                <i data-feather="sun" class="w-3 h-3 mr-2 text-primary-500 group-hover:text-accent"></i>
+                                Pecuária (Patrimônio)
                             </a>
                         </li>
                     </ul>

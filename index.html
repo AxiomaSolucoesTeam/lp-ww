@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Wanderson Wigande — Business Coaching & DBC Mentorship</title>
-        <meta name="description"
+<html lang="pt-BR" class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderson Wigande — Business Coaching & DBC Mentorship</title>
+    <meta name="description"
         content="Mentoria estratégica e contabilidade especializada para médicos e empresários que querem crescer com previsibilidade, segurança financeira e lucro real." />
-        <link rel="stylesheet" href="style.css" />
-        
+    <link rel="stylesheet" href="style.css" />
+
     <!-- Tailwind (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -72,7 +72,7 @@
 <body
     class="font-sans antialiased selection:bg-primary/20 bg-slate-50 text-slate-900 dark:bg-dark-900 dark:text-gray-200">
     <!-- Navigation -->
-    <nav class="nav-centerbar fade-in" style="transition-delay: 0ms">
+    <nav class="nav-centerbar fade-in absolute" style="transition-delay: 0ms">
         <button id="navToggle" class="nav-toggle fade-in" style="transition-delay: 40ms" aria-label="Abrir menu">
             <!-- hamburger -->
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
@@ -102,20 +102,11 @@
                 Agendar Diagnóstico
             </a>
         </div>
-
-        <button id="themeToggle" class="nav-toggle theme-toggle fade-in" style="transition-delay: 60ms"
-            aria-label="Alternar tema claro/escuro">
-            <span class="theme-icon-sun">
-                <i data-feather="sun"></i>
-            </span>
-            <span class="theme-icon-moon">
-                <i data-feather="moon"></i>
-            </span>
-        </button>
+        
     </nav>
 
     <!-- Mobile drawer centered under the pill -->
-    <div id="navDrawer" class="nav-drawer">
+    <div id="navDrawer" class="nav-drawer absolute gap-4 p-6 mt-1">
         <a href="#hero">Início</a>
         <a href="#papel-contabilmed">A ContabilMed</a>
         <a href="#about">O Mentor</a>
@@ -159,12 +150,12 @@
                 <div class="flex flex-col sm:flex-row gap-4 slide-up" style="transition-delay: 160ms">
                     <!-- CTA principal: WhatsApp -->
                     <a href="https://wa.me/5551999999999?text=Quero%20agendar%20um%20Diagn%C3%B3stico%20Estrat%C3%A9gico"
-                        class="w-full sm:w-auto border border-accent-400
-            text-accent-700 dark:text-accent
+                        class="w-full sm:w-auto bg-accent-600
+            text-white dark:text-white
             hover:bg-slate-100 dark:hover:bg-dark-800
             px-6 py-3 rounded-lg font-medium transition
             text-center sm:text-left">
-                        Agendar Diagnóstico Estratégico
+                        AGENDAR DIAGNÓSTICO ESTRATÉGICO
                     </a>
                 </div>
             </div>
@@ -285,7 +276,7 @@
                 <div class="text-center border-t border-white/10 pt-8">
                     <a href="https://wa.me/5551999999999?text=Quero%20organizar%20e%20expandir%20meu%20consult%C3%B3rio"
                         class="inline-flex items-center bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 rounded-lg font-bold transition transform hover:-translate-y-1 shadow-glow-green">
-                        Quero organizar e expandir meu consultório
+                        QUERO ORGANIZAR E EXPANDIR MEU CONSULTÓRIO
                         <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
                     </a>
                 </div>
@@ -299,6 +290,18 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center">
 
+                <div class="md:w-2/3 md:pl-12 flex flex-col items-center text-center">
+                    <p class="text-xs md:text-sm tracking-[0.25em] uppercase text-accent-700 dark:text-accent-300 mb-3 slide-up"
+                        style="transition-delay: 20ms">
+                        O Arquiteto por trás da estrutura
+                    </p>
+
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 slide-up text-primary-800 dark:text-gray-100"
+                        style="transition-delay: 40ms">
+                        Quem está por trás da ContabilMed?
+                    </h2>
+                </div>
+
                 <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
                     <img src="assets/2025-09-1609.18.49_4626daea.jpg" alt="Wanderson Wigande em evento com empresários"
                         class="w-full max-w-sm h-auto object-cover border-2 border-primary/60 shadow-2xl rounded-xl fade-in"
@@ -306,15 +309,6 @@
                 </div>
 
                 <div class="md:w-2/3 md:pl-12">
-                    <p class="text-xs md:text-sm tracking-[0.25em] uppercase text-accent-700 dark:text-accent-300 mb-3 slide-up"
-                        style="transition-delay: 20ms">
-                        O Arquiteto por trás da estrutura
-                    </p>
-
-                    <h2 class="text-3xl font-bold mb-6 slide-up text-primary-800 dark:text-gray-100"
-                        style="transition-delay: 40ms">
-                        Quem está por trás da ContabilMed?
-                    </h2>
 
                     <p class="text-slate-700 dark:text-gray-300 mb-8 slide-up" style="transition-delay: 60ms">
                         Wanderson Wigande é empresário e mentor com atuação em três frentes complementares, unindo a
@@ -397,6 +391,14 @@
                             “Crescer não é ter mais trabalho.<br>
                             É ter mais <span class="text-accent-600 dark:text-accent-400 font-semibold">direção</span>.”
                         </p>
+                    </div>
+
+                    <div class="text-center border-t border-white/10 pt-8 p-6">
+                        <a href="https://wa.me/5551999999999?text=Quero%20organizar%20e%20expandir%20meu%20consult%C3%B3rio"
+                            class="inline-flex items-center bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 rounded-lg font-bold transition transform hover:-translate-y-1 shadow-glow-green">
+                            SOLICITAR CONSULTORIA ESTRATÉGICA
+                            <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -487,8 +489,8 @@
 
                     <div class="text-center md:text-right">
                         <a href="https://wa.me/5551999999999?text=Quero%20estruturar%20meu%20consult%C3%B3rio%20como%20neg%C3%B3cio"
-                            class="inline-block text-accent px-8 py-3 border border-accent/60 rounded-lg font-medium transition shadow-lg transform hover:-translate-y-1">
-                            Quero estruturar meu consultório como negócio
+                            class="inline-block text-white px-8 py-3 bg-accent-600 hover:bg-accent-700 rounded-lg font-medium transition shadow-lg transform hover:-translate-y-1">
+                            QUERO ESTRUTURAR MEU CONSULTÓRIO COMO NEGÓCIO
                         </a>
                     </div>
                 </div>
@@ -498,7 +500,7 @@
     </section>
 
     <!-- Depoimentos / Resultados -->
-    <section id="testimonials" class="py-20 glass">
+    <section id="testimonials" class="py-20 glass-light">
         <div class="container mx-auto px-4">
 
             <!-- Cabeçalho -->
@@ -578,8 +580,8 @@
 
                 <!-- Depoimento 3 - Empresário / mentoria -->
                 <div class="bg-dark-800/90 p-6 rounded-xl border border-white/5
-               hover:border-accent/60 hover:shadow-xl hover:shadow-black/40
-               transition slide-up" style="transition-delay: 160ms">
+                    hover:border-accent/60 hover:shadow-xl hover:shadow-black/40
+                    transition slide-up" style="transition-delay: 160ms">
                     <div class="flex mb-4 text-accent-400">
                         <i data-feather="star" class="w-4 h-4"></i>
                         <i data-feather="star" class="w-4 h-4"></i>
@@ -603,12 +605,72 @@
                     </div>
                 </div>
 
+                <!-- Depoimento 4 - Outro depoimento -->
+                <div class="bg-dark-800/90 p-6 rounded-xl border border-white/5
+                    hover:border-accent/60 hover:shadow-xl hover:shadow-black/40
+                    transition slide-up" style="transition-delay: 240ms">
+                    <div class="flex mb-4 text-accent-400">
+                        <i data-feather="star" class="w-4 h-4"></i>
+                        <i data-feather="star" class="w-4 h-4"></i>
+                        <i data-feather="star" class="w-4 h-4"></i>
+                        <i data-feather="star" class="w-4 h-4"></i>
+                        <i data-feather="star" class="w-4 h-4"></i>
+                    </div>
+                    <p class="text-gray-200 italic mb-6">
+                        “A ContabilMed nos ajudou a estruturar nossa expansão para novas unidades.
+                        Com a organização financeira e tributária em dia, conseguimos focar no crescimento
+                        sem medo de surpresas desagradáveis.”
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                            <i data-feather="user" class="text-accent-300"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-100">Mariana Silva</h4>
+                            <p class="text-gray-400 text-sm">Sócia de rede de clínicas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Depoimento 5 - Outro depoimento -->
+                <div class="bg-dark-800/90 p-6 rounded-xl border border-white/5
+                    hover:border-accent/60 hover:shadow-xl hover:shadow-black/40
+                    transition slide-up" style="transition-delay: 320ms">
+                    <div class="flex mb-4 text-accent-400">
+                        <i data-feather="star" class="w-4 h-4"></i>
+                        <i data-feather="star" class="w-4 h-4"></i>
+                        <i data-feather="star" class="w-4 h-4"></i>
+                        <i data-feather="star" class="w-4 h-4"></i>
+                        <i data-feather="star" class="w-4 h-4"></i>
+                    </div>
+                    <p class="text-gray-200 italic mb-6">
+                        “Antes eu via a contabilidade como um mal necessário. Hoje vejo como uma aliada estratégica.
+                        Com a ContabilMed, meu consultório está mais organizado, lucrativo e preparado para crescer.”
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mr-4">
+                            <i data-feather="user" class="text-accent-300"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-100">Lucas Pereira</h4>
+                            <p class="text-gray-400 text-sm">Médico especialista</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- botao -->
+                <div class="col-span-full text-center mt-1 slide-up" style="transition-delay: 400ms">
+                    <a href="https://wa.me/5551999999999?text=Quero%20ter%20esses%20resultados%20tamb%C3%A9m"
+                        class="inline-block bg-accent-600 hover:bg-accent-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg transform hover:-translate-y-1">
+                        QUERO TER ESSES RESULTADOS TAMBÉM
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Diagnóstico Estratégico Gratuito-->
-    <section id="diagnostico" class="py-20 glass-light">
+    <section id="diagnostico" class="py-20 glass">
         <div class="container mx-auto px-4">
             <div class="max-w-5xl mx-auto">
 
@@ -710,13 +772,13 @@
                             <a href="https://wa.me/5551999999999?text=Quero%20agendar%20um%20Diagn%C3%B3stico%20Estrat%C3%A9gico"
                                 class="block w-full text-center bg-primary-600 hover:bg-primary-700
                      text-white px-6 py-3 rounded-lg font-medium transition shadow-glow-green mb-3">
-                                Agendar Diagnóstico via WhatsApp
+                                AGENDAR DIAGNÓSTICO VIA WHATSAPP
                             </a>
 
                             <!-- CTA secundário: formulário -->
-                            <a href="#contact" class="block w-full text-center border border-accent/60 text-accent
+                            <a href="#contact" class="block w-full text-center bg-accent-600 text-white
                      hover:bg-dark-800 px-6 py-3 rounded-lg font-medium transition">
-                                Prefiro preencher um formulário
+                                PREFIRO PREENCHER UM FORMULÁRIO
                             </a>
                         </div>
                     </div>
@@ -839,15 +901,16 @@
                             <div class="flex space-x-4">
                                 <button type="submit" class="flex-1 bg-primary-600 hover:bg-primary-700 text-white
                        px-6 py-3 rounded-lg font-medium transition shadow-glow-green">
-                                    Enviar mensagem
+                                    ENVIAR MENSAGEM
                                 </button>
                                 <a href="https://wa.me/5551999999999?text=Quero%20falar%20sobre%20um%20Diagn%C3%B3stico%20Estrat%C3%A9gico"
-                                    class="flex-1 border border-accent/60 text-accent
+                                    class="flex-1 text-white bg-accent-600 hover:bg-accent-700
                        hover:bg-slate-50 dark:hover:bg-dark-800
                        px-6 py-3 rounded-lg font-medium text-center transition">
-                                    Falar no WhatsApp
+                                    FALAR NO WHATSAPP
                                 </a>
                             </div>
+                            <!--inline-flex items-center bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 rounded-lg font-bold transition transform hover:-translate-y-1 shadow-glow-green-->
                         </form>
 
                         <div id="form-success" class="hidden mt-6 p-4 rounded-lg
@@ -934,160 +997,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="glass py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-
-                <!-- Coluna 1: Marca -->
-                <div class="slide-up text-center md:text-left" style="transition-delay: 0ms">
-                    <h3 class="text-xl font-bold mb-4 text-primary-900 dark:text-gray-100">
-                        Wanderson Wigande
-                    </h3>
-                    <p class="text-slate-700 dark:text-gray-400 text-sm">
-                        A ContabilMed é o núcleo que sustenta a visão empresarial de médicos e negócios que crescem com
-                        segurança, previsibilidade e lucro real.
-                    </p>
-                </div>
-
-                <!-- Coluna 2: Navegação -->
-                <div class="slide-up text-center md:text-left" style="transition-delay: 80ms">
-                    <h4 class="font-semibold text-lg mb-4 text-primary-900 dark:text-gray-100">
-                        Navegação
-                    </h4>
-                    <ul class="space-y-2 text-sm">
-                        <li>
-                            <a href="#hero" class="text-slate-600 dark:text-gray-400 hover:text-accent transition">
-                                Início
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#medicos" class="text-slate-600 dark:text-gray-400 hover:text-accent transition">
-                                Para Médicos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#empresarios"
-                                class="text-slate-600 dark:text-gray-400 hover:text-accent transition">
-                                Para Empresários
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#testimonials"
-                                class="text-slate-600 dark:text-gray-400 hover:text-accent transition">
-                                Resultados
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#diagnostico"
-                                class="text-slate-600 dark:text-gray-400 hover:text-accent transition">
-                                Diagnóstico Estratégico
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="text-slate-600 dark:text-gray-400 hover:text-accent transition">
-                                Contato
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Coluna 3: Soluções -->
-                <div class="slide-up text-center md:text-left" style="transition-delay: 160ms">
-                    <h4 class="font-semibold text-lg mb-4 text-primary-900 dark:text-gray-100">
-                        Ecossistema
-                    </h4>
-                    <ul class="space-y-2 text-sm">
-                        <li>
-                            <a href="#medicos"
-                                class="group flex items-center justify-center md:justify-start text-slate-600 dark:text-gray-400 hover:text-accent transition">
-                                <i data-feather="briefcase"
-                                    class="w-3 h-3 mr-2 text-primary-500 group-hover:text-accent"></i>
-                                ContabilMed (Técnico)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#about"
-                                class="group flex items-center justify-center md:justify-start text-slate-600 dark:text-gray-400 hover:text-accent transition">
-                                <i data-feather="trending-up"
-                                    class="w-3 h-3 mr-2 text-primary-500 group-hover:text-accent"></i>
-                                Mentoria (Estratégico)
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#about"
-                                class="group flex items-center justify-center md:justify-start text-slate-600 dark:text-gray-400 hover:text-accent transition">
-                                <i data-feather="sun" class="w-3 h-3 mr-2 text-primary-500 group-hover:text-accent"></i>
-                                Pecuária (Patrimônio)
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Coluna 4: Contato / Redes -->
-                <div class="slide-up text-center md:text-left" style="transition-delay: 240ms">
-                    <h4 class="font-semibold text-lg mb-4 text-primary-900 dark:text-gray-100">
-                        Contato
-                    </h4>
-                    <div class="space-y-3 text-sm text-slate-700 dark:text-gray-400 mb-4">
-                        <p>
-                            E-mail:
-                            <a href="mailto:contato@contabilmed.com.br" class="hover:text-accent transition">
-                                contato@contabilmed.com.br
-                            </a>
-                        </p>
-                        <p>
-                            WhatsApp:
-                            <a href="https://wa.me/5551999999999" class="hover:text-accent transition">
-                                (00) 00000-0000
-                            </a>
-                        </p>
-                    </div>
-
-                    <h5 class="font-semibold text-sm mb-2 text-primary-900 dark:text-gray-100">
-                        Redes sociais
-                    </h5>
-                    <div class="flex space-x-3 justify-center md:justify-start">
-                        <a href="#" class="p-3 rounded-full transition flex items-center justify-center
-                       bg-slate-100/90 dark:bg-dark-800
-                       hover:bg-accent hover:text-dark-900" aria-label="Instagram">
-                            <i data-feather="instagram" class="w-4 h-4"></i>
-                        </a>
-                        <a href="#" class="p-3 rounded-full transition flex items-center justify-center
-                       bg-slate-100/90 dark:bg-dark-800
-                       hover:bg-accent hover:text-dark-900" aria-label="LinkedIn">
-                            <i data-feather="linkedin" class="w-4 h-4"></i>
-                        </a>
-                        <a href="https://wa.me/5551999999999" class="p-3 rounded-full transition flex items-center justify-center
-                       bg-slate-100/90 dark:bg-dark-800
-                       hover:bg-accent hover:text-dark-900" aria-label="WhatsApp">
-                            <i data-feather="message-circle" class="w-4 h-4"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pt-8 border-t
-             border-slate-200/80 dark:border-dark-700
-             text-center text-slate-500 dark:text-gray-500
-             text-xs md:text-sm slide-up" style="transition-delay: 320ms">
-                <p>&copy; 2025 Wanderson Wigande &amp; ContabilMed. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Mobile CTA Bar -->
-    <div class="md:hidden fixed bottom-0 left-0 right-0 glass-nav p-3 flex justify-between z-50">
-        <a href="https://wa.me/5551999999999?text=Quero%20agendar%20um%20Diagn%C3%B3stico%20Estrat%C3%A9gico"
-            class="flex-1 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-4 py-3 rounded-lg font-medium text-center transition shadow-glow-green">
-            Agendar Diagnóstico
-        </a>
-        <a href="https://wa.me/5551999999999"
-            class="flex-1 border border-white/15 text-white hover:bg-white/10 px-4 py-3 rounded-lg font-medium text-center ml-3 transition">
-            Falar no WhatsApp
-        </a>
-    </div>
 
     <script src="script.js"></script>
 </body>
